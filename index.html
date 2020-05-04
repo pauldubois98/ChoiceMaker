@@ -9,24 +9,53 @@
 
 <body>
     <h1>Choice Maker</h1>
-    <h2>The best way to take reliable random decisions</h2>
-    <h3>Concept:</h3>
-    <p>
-        There are many tools to choose an option at random for you.
-        However, these choices are not reliable.
-        That is, if you ask an other time to choose between the same set of options, you will get a different answer.
-        This may be suitable to decide what to cook, however, it isn't to make life decision (such as choosing
-        university).
-    </p>
-    <p>
-        Choice Maker is a solution to have a persistent random choice:
-        It choose randomly from your set of options, and this decision will remain in time, no matter how many times the
-        user reset the choice.
-    </p>
-    <p>
-        Note that it isn't advise to use this tool for decisions as important as your future university.
-    </p>
+    <h2>‘ The best way to take <span class="underlined">reliable random decisions</span> ’</h2>
+
+    <div id="concept">
+        <h4>Concept:</h4>
+        <p>
+            There are many tools to choose an option at random for you.
+            However, these choices are not reliable.
+            That is, if you ask an other time to choose between the same set of options, you will get a different
+            answer.
+            This may be suitable to decide what to cook, however, it isn't to make life decision (such as choosing
+            university).
+        </p>
+        <p>
+            Choice Maker is a solution to have a persistent random choice:
+            It choose randomly from your set of options, and this decision will remain in time, no matter how many times
+            the
+            user reset the choice.
+        </p>
+        <p>
+            <em>Note that it isn't advise to use this tool for decisions as important as your future university.</em>
+        </p>
+    </div>
+
+    <div id="app">
+        <div id="output">
+            <span>Choice: </span>
+            <span id="choice_output"></span>
+        </div>
+
+        <div id="options">
+            <h5>Options list:</h5>
+            <ul id="choices">
+                <li class="option"><input type="text" value="" placeholder="Type here..."></li>
+            </ul>
+        </div>
+        
+        <div id="commands">
+            <span class="btn" id="add_option">Add</span>
+            <span class="btn" id="make_choice">Choose</span>
+        </div>
+        
+    </div>
+
+    <div id="space"></div>
+
 </body>
+<script src="sha1.js"></script>
 <script src="script.js"></script>
 
 </html>
