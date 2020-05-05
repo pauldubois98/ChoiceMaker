@@ -2,6 +2,8 @@
 var choices_list = document.getElementById("choices");
 //button for adding an option
 var add_option_btn = document.getElementById("add_option");
+//button for removing an option
+var remove_option_btn = document.getElementById("remove_option");
 //button to make the choice
 var make_choice_btn = document.getElementById("make_choice");
 //choice output
@@ -9,18 +11,25 @@ var choice_output_label = document.getElementById("choice_output");
 
 
 
-function reload(event){
+function reload(del=0, add=0){
     var elements = document.getElementsByClassName("option");
     var update_list = "";
-    for (var i = 0; i < elements.length; i++) {
+    for (var i = 0; i < elements.length-del; i++) {
         update_list += "<li class=\"option\"><input type=\"text\" value=\""+elements[i].childNodes[0].value+"\" placeholder=\"Type here...\"></li>";
+    }
+    for (var i = 0; i < add; i++) {
+        update_list += "<li class=\"option\"><input type=\"text\" value=\"\" placeholder=\"Type here...\"></li>";
     }
     choices_list.innerHTML = update_list;
 }
 
 add_option_btn.addEventListener("click", function(event) {
-    reload();
-    choices_list.innerHTML = choices_list.innerHTML + "<li class=\"option\"><input type=\"text\" value=\"\" placeholder=\"Type here...\"></li>";
+    reload(0,1);
+});
+
+
+remove_option_btn.addEventListener("click", function(event) {
+    reload(1,0);
 });
 
 

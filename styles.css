@@ -7,14 +7,17 @@ body{
 
 /* TITLES */
 h1{
+    text-align: center;
     color: red;
     margin: 0.5em;
 }
 h2{
+    text-align: center;
     color: rebeccapurple;
     margin: 0.25em;
 }
 h3{
+    text-align: center;
     color: orange;
     margin: 0.125em;
 }
@@ -41,6 +44,7 @@ p{
 /* APP */
 #app{
     font-size: 1.5em;
+    padding: 0.2em;
 }
 /* options */
 h5{
@@ -55,6 +59,7 @@ input{
     font-size: 0.9em;
     width: 15em;
 }
+/* commands */
 .btn{
     cursor: default;
     cursor: pointer;
@@ -67,11 +72,27 @@ input{
     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14),0 3px 1px -2px rgba(0,0,0,0.12),0 1px 5px 0 rgba(0,0,0,0.2);
     -webkit-transition: box-shadow .5s ease;
     transition: box-shadow .5s ease;
+
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
-/* commands */
 #commands{
     margin-top: 2em;
     margin-bottom: 2em;
+}
+#add_option{
+    background-color: mediumseagreen;
+}
+#remove_option{
+    background-color: orchid;
+}
+#make_choice{
+    background-color: orange;
+    margin-left: 2em;
 }
 
 
@@ -89,3 +110,49 @@ input{
     height: 5em;
     width: 1em;
 }
+
+
+
+
+/* *************** MEDIA QUERIES *************** */
+@media screen and (max-width: 700px) {
+    input{
+        width: 13em;
+    }
+}
+
+/*
+@media screen and (max-width: 1200px) {
+    h1{
+        font-size: 3.5em;
+    }
+    h2{
+        font-size: 2.5em;
+    }
+    h3{
+        font-size: 2.25em;
+    }
+    h4{
+        font-size: 2em;
+    }
+    p{
+        max-width: 100%;
+        font-size: 1.5em;
+    }
+    h5{
+        font-size: 1.5em;
+    }
+    input{
+        font-size: 1.55em;
+    }
+    .btn{
+        font-size: 1.6em;
+    }
+    #output{
+        font-size: 1.75em;
+    }
+    #choice_output{
+        font-size: 1.8em;
+    }
+  }
+*/
