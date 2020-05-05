@@ -14,7 +14,7 @@ var choice_output_label = document.getElementById("choice_output");
 function reload(del=0, add=0){
     var elements = document.getElementsByClassName("option");
     var update_list = "";
-    for (var i = 0; i < elements.length-del; i++) {
+    for (var i = 0; i < Math.max(elements.length-del,1); i++) {
         update_list += "<li class=\"option\"><input type=\"text\" value=\""+elements[i].childNodes[0].value+"\" placeholder=\"Type here...\"></li>";
     }
     for (var i = 0; i < add; i++) {
