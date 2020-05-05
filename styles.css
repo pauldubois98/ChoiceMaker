@@ -115,14 +115,7 @@ input{
 
 
 /* *************** MEDIA QUERIES *************** */
-@media screen and (max-width: 700px) {
-    input{
-        width: 13em;
-    }
-}
-
-/*
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 800px) {
     h1{
         font-size: 3.5em;
     }
@@ -144,9 +137,11 @@ input{
     }
     input{
         font-size: 1.55em;
+        width: 13em;
     }
     .btn{
         font-size: 1.6em;
+        margin: 0.25em;
     }
     #output{
         font-size: 1.75em;
@@ -154,5 +149,7 @@ input{
     #choice_output{
         font-size: 1.8em;
     }
-  }
-*/
+    #commands{
+        margin-top: 6em;
+    }
+}
