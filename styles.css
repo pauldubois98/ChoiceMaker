@@ -137,10 +137,10 @@ input{
     }
     input{
         font-size: 1.55em;
-        width: 13em;
+        width: 10em;
     }
     .btn{
-        font-size: 1.6em;
+        font-size: 1.3em;
         margin: 0.25em;
     }
     #output{
