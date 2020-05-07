@@ -14,18 +14,21 @@
     <div id="concept">
         <h4>Concept:</h4>
         <p>
-            There are many tools to choose an option at random for you.
-            However, these choices are not reliable.
-            That is, if you ask an other time to choose between the same set of options, you will get a different
-            answer.
+            There are many tools to choose an option at random for you. However, these choices are not reliable. That
+            is, if you ask an other time to choose between the same set of options, you will get a different answer.
             This may be suitable to decide what to cook, however, it isn't to make life decision (such as choosing
             university).
         </p>
         <p>
             Choice Maker is a solution to have a persistent random choice:
-            It choose randomly from your set of options, and this decision will remain in time, no matter how many times
-            the
-            user reset the choice.
+            It chooses randomly from a set of options, but this random choice will be always the same no matter how many
+            times the user reset the choice and whoever asks the random choice among the same set of alternatives. But
+            the choice is really random and uniform across alternatives.
+        </p>
+        <p>
+            Moreover, the random choice satisfies transitivity meaning that dominated alternative in a choice set will
+            always be in any other choice set that includes this dominated alternative and the randomly chosen one (for
+            example if the random choice among A B C is A, then B or C cannot be chosen randomly among A B C D).
         </p>
         <p>
             <em>Note that it isn't advise to use this tool for decisions as important as your future university.</em>
@@ -44,13 +47,13 @@
                 <li class="option"><input type="text" value="" placeholder="Type here..."></li>
             </ul>
         </div>
-        
+
         <div id="commands">
             <span class="btn" id="add_option">Add</span>
             <span class="btn" id="remove_option">Remove</span>
             <span class="btn" id="make_choice">Choose</span>
         </div>
-        
+
     </div>
 
     <div id="space"></div>
